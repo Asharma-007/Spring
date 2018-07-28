@@ -1,0 +1,34 @@
+<?xml version = "1.0" encoding = "UTF-8"?>
+
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans
+   http://www.springframework.org/schema/beans/spring-beans-3.0.xsd">
+
+	<bean name="hospital" class="com.aakash.spring.Hospital.ConstructorArgs">
+		<property name="name">
+			<value>Mahindru</value>
+		</property>
+		<property name="Department">
+			<list>
+				<value>Front Office</value>
+				<value>In office</value>
+				<value>Out Office</value>
+			</list>
+		</property>
+		<property name="DrName">
+			<set>
+				<value>Aakash</value>
+				<value>pragesh</value>
+				<value>Shobhit</value>
+			</set>
+		</property>
+		<property name="DocAddrs">
+		<map>
+		<entry key="100" value="Aakash"></entry>
+		<entry key="200" value="pragesh"></entry>
+		</map>
+		</property>
+	</bean>
+
+</beans>
